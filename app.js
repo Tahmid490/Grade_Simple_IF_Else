@@ -1,7 +1,8 @@
-const number = prompt("Enter your number: ");
+let number = prompt("Enter your number: ");
+number = parseInt(number);
 
 if (number > 100 || number < 0) {
-  document.write(`${number} is Invalid Number`);
+  document.write(`<h1>${number} is Invalid Number</h1>`);
 } else if (number >= 90 && number <= 100) {
   document.write(`<h1> ${number} is passing number and grade is A+ </h1>`);
 } else if (number >= 80 && number < 90) {
@@ -15,5 +16,5 @@ if (number > 100 || number < 0) {
 } else if (number >= 33 && number < 50) {
   document.write(` <h1>${number} is passing number and grade is D </h1>`);
 } else {
-  document.write(`<h1>${number} is Failed F</h1>`);
+  document.write(`<h1>${number} is Failed F </h1>`);
 }
